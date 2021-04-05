@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html title=page.title %}
+</head>
+<body>
+    <div class="container">
+        <h1>{{ page.title }} / Hayden Brown</h1>
+        <h3>{{ page.description }}</h3>
+        <div class="social-icons">
+            <a href="https://twitter.com/{{ site.twitter_username }}" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/{{ site.github_username }}" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://twitch.tv/{{ site.twitch_username }}" class="social-icon"><i class="fab fa-twitch"></i></a>
+        </div>
+        {% include nav.html page=page.title %}
+        {{ content }}
+        {% include footer.html %}
+    </div>
+</body>
+</html>

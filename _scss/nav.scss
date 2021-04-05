@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.nav-item {
+    height: 100%;
+    padding: 15px 15px 15px 0;
+    color: $light;
+    transition: color .2s ease;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    color: darken($light, 20%);
+}
+
+.nav-item:active, .nav-item.active {
+    color: darken($light, 20%);
+}
+
+.nav-item:after {
+    height: 0;
+    transform: scaleX(0) !important;
+}

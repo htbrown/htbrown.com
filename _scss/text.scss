@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: $light;
+    line-height: 25px;
+}
+
+strong {
+    color: $primary;
+}
+
+p, span {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+    position: relative;
+}
+
+a:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background: $primary;
+    transition: transform .2s ease;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+}
+
+a:hover:after {
+    transform: scaleX(1);
+}
+
+.social-icon {
+    margin-right: 5px;
+}
+
+.social-icon i {
+    transition: color .2s ease;
+}
+
+.social-icon:hover i {
+    color: $primary;
+}
+
+.inline-heading {
+    margin-top: 2em;
+}
+
+.title-link {
+    font-family: 'Merriweather', serif;
+}

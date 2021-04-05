@@ -1,0 +1,36 @@
+.tech {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.tech li {
+    list-style: none;
+    width: 40%;
+    padding: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: $light;
+    border-radius: 15px;
+}
+
+.tech p {
+    font-size: 15px;
+    line-height: 18px;
+    color: $dark;
+}
+
+.tech h3 {
+    color: $dark;
+}
+
+@media screen and (max-width: 800px) {
+    .tech li {
+        width: 100% !important;
+    }
+}

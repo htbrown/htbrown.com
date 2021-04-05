@@ -1,0 +1,13 @@
+---
+title: Blog
+description: Rambles about things, rarely updated.
+layout: page
+permalink: /blog
+---
+
+{% for post in site.posts %}
+    <section>
+        <h1><a class="title-link" href="{{ post.url }}">{{ post.title }}</a></h1>
+        <p>{{ post.date | date: '%d %B %Y' }} &bull; {% if post.category %}{{ post.category }}{% else %}uncategorised{% endif %}</p>
+    </section>
+{% endfor %}

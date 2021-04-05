@@ -1,0 +1,32 @@
+---
+---
+
+@import 'colours';
+@import 'backgroundFade';
+@import 'containers';
+@import 'text';
+@import 'nav';
+@import 'footer';
+@import 'tech';
+@import 'markdown';
+
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), linear-gradient(to bottom right, #D0026C, #943194, #003294);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+
+    -webkit-animation: backgroundFade 15s ease infinite;
+    -moz-animation: backgroundFade 15s ease infinite;
+    animation: backgroundFade 15s ease infinite;
+
+    display: flex;
+    align-items: center;
+}

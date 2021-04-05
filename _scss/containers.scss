@@ -1,0 +1,15 @@
+.container {
+    margin: 10vh 10vw;
+    max-width: 50%;
+}
+
+section {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        max-width: 100%;
+    }
+}

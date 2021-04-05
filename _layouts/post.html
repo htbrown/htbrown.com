@@ -1,0 +1,24 @@
+{% assign title = page.title | append: ' / Blog' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html title=title %}
+</head>
+<body>
+    <div class="container">
+        <h1>Blog / Hayden Brown</h1>
+        <div class="social-icons">
+            <a href="https://twitter.com/{{ site.twitter_username }}" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/{{ site.github_username }}" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://twitch.tv/{{ site.twitch_username }}" class="social-icon"><i class="fab fa-twitch"></i></a>
+        </div>
+        {% include nav.html page="Blog" %}
+        <section style="margin-bottom: 8vh;">
+            <h1>{{ page.title }}</h1>
+            <h3>{{ page.date | date: '%d %B %Y' }} &bull; {% if post.category %}{{ post.category }}{% else %}uncategorised{% endif %}</h3>    
+        </section>
+        {{ content }}
+        {% include footer.html %}
+    </div>
+</body>
+</html>

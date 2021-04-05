@@ -1,0 +1,21 @@
+---
+title: Tech
+description: The majority of the technology that I have lying around.
+layout: page
+permalink: /tech
+---
+
+<section>
+    <ul class="tech">
+        {% for d in site.devices %}
+            <li>
+                <div>
+                    <h3>{{ d.name }}</h3>
+                    <p>
+                        {{ d.content | markdownify }}
+                    </p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
