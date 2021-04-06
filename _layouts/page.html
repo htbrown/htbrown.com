@@ -4,6 +4,7 @@
     {% include head.html title=page.title %}
 </head>
 <body>
+    <button id="easterEgg" onclick="easterEgg()"></button>
     <div class="container">
         <h1>{{ page.title }} / Hayden Brown</h1>
         <h3>{{ page.description }}</h3>
@@ -15,6 +16,7 @@
         {% include nav.html page=page.title %}
         {{ content }}
         {% include footer.html %}
+        {% include foot.html %}
     </div>
 </body>
 </html>

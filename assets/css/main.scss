@@ -23,10 +23,22 @@ body {
     background-size: 400% 400%;
     background-attachment: fixed;
 
-    -webkit-animation: backgroundFade 15s ease infinite;
-    -moz-animation: backgroundFade 15s ease infinite;
-    animation: backgroundFade 15s ease infinite;
+    -webkit-animation: backgroundFade 20s ease infinite;
+    -moz-animation: backgroundFade 20s ease infinite;
+    animation: backgroundFade 20s ease infinite;
 
     display: flex;
     align-items: center;
+}
+
+#easterEgg {
+    background: transparent;
+    border: none !important;
+    outline: none !important;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
 }

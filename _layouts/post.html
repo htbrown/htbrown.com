@@ -5,6 +5,7 @@
     {% include head.html title=title %}
 </head>
 <body>
+    <button id="easterEgg" onclick="easterEgg()"></button>
     <div class="container">
         <h1>Blog / Hayden Brown</h1>
         <div class="social-icons">
@@ -19,6 +20,7 @@
         </section>
         {{ content }}
         {% include footer.html %}
+        {% include foot.html %}
     </div>
 </body>
 </html>
