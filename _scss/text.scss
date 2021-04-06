@@ -8,15 +8,24 @@ h1, h2, h3, h4, h5, h6 {
 * {
     font-family: 'Roboto', sans-serif;
     color: $light;
-    line-height: 25px;
+
 }
 
 strong {
     color: $primary;
 }
 
+h1 {
+    line-height: 35px;
+}
+
+h2 {
+    line-height: 25px;
+}
+
 p, span {
     font-size: 18px;
+    line-height: 25px;
 }
 
 a {
