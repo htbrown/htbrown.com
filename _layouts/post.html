@@ -14,11 +14,17 @@
             <a href="https://twitch.tv/{{ site.twitch_username }}" class="social-icon"><i class="fab fa-twitch"></i></a>
         </div>
         {% include nav.html page="Blog" %}
-        <section style="margin-bottom: 8vh;">
-            <h1>{{ page.title }}</h1>
-            <h3>{{ page.date | date: '%d %B %Y' }} &bull; {% if post.category %}{{ post.category }}{% else %}uncategorised{% endif %}</h3>    
+        <h1>{{ page.title }}</h1>
+        <h3>{{ page.date | date: '%d %B %Y' }} &bull; {% if page.category %}{{ page.category }}{% else %}uncategorised{% endif %}</h3>    
+        <section class="post-content">
+            {{ content }}
         </section>
-        {{ content }}
+        <section>
+            <hr>
+            <p class="post-footer">
+                Spotted a typo? Inaccurate information? <a href="https://github.com/htbrown/htbrown.github.io">Improve this page on GitHub.</a>
+            </p>
+        </section>
         {% include footer.html %}
         {% include foot.html %}
     </div>
