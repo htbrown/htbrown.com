@@ -2,29 +2,29 @@ blockquote {
     margin: 10px 10px 10px 0;
     padding: 10px 0px 10px 20px;
     border-left: 5px solid $primary;
-    background-color: rgba($primary, .1)
-}
+    background-color: rgba($primary, .1);
 
-blockquote p {
-    margin: 0;
-    padding: 0;
-}
-
-code.highlighter-rouge {
-    background-color: rgba($primary, .25);
-    font-family: monospace;
-    padding: 0 3px;
+    p {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 code {
     padding: 0 3px;
     margin: 0;
-}
 
-code * {
-    font-family: monospace;
-    padding: 0;
-    margin: 0;
+    &.highlighter-rouge {
+        background-color: rgba($primary, .25);
+        font-family: monospace;
+        padding: 0 3px;
+    }
+
+    * {
+        font-family: monospace;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 div.highlight {
@@ -35,10 +35,13 @@ div.highlight {
 
 hr {
     border: none;
-    height: 1px;
-    background-color: darken($light, 20%);
+    border-radius: 2px;
+    height: 2px;
+    background-color: $light;
 }
 
-.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
-    margin-top: 2em;
+.post-content {
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 2em;
+    }
 }

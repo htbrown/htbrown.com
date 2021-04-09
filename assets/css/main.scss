@@ -19,7 +19,7 @@ body, html {
 }
 
 body {
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), linear-gradient(to bottom right, #D0026C, #943194, #003294);
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), linear-gradient(to bottom right, lighten(#D0026C, 25%), lighten(#943194, 25%), lighten(#003294, 25%));
     background-size: 400% 400%;
     background-attachment: fixed;
 
