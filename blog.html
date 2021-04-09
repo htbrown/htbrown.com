@@ -8,6 +8,6 @@ permalink: /blog/
 {% for post in site.posts %}
     <section>
         <h1><a class="title-link" href="{{ post.url }}">{{ post.title }}</a></h1>
-        <p>{{ post.date | date: '%d %B %Y' }} &bull; {% if post.category %}{{ post.category }}{% else %}uncategorised{% endif %}</p>
+        <p>{{ post.date | date: '%d %B %Y' }} &bull; {% if post.category %}{% for c in post.category %}{{ c }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% else %}uncategorised{% endif %}</p>
     </section>
 {% endfor %}

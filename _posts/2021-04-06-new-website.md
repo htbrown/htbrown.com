@@ -1,7 +1,9 @@
 ---
 title: New Website!
 description: v5 of htbrown.com 🎉
-category: dev, website
+category:
+    - dev
+    - website
 layout: post
 ---
 Welcome to version 5 of htbrown.com 🎉
