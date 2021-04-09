@@ -5,24 +5,22 @@ layout: page
 permalink: /blog/archive
 ---
 
-{% assign scats = site.categories | sort %}
+{% assign sitecats = site.categories | sort %}
 
-{% for category in scats %}
-    <div id="{{ category | first | replace:' ','-' }}">
+{% for category in sitecats %}
+    <section id="{{ category | first | replace:' ','-' }}">
 
         {% unless forloop.first %}<hr>{% endunless %}
 
         <h1>{{ category | first }}</h1>
 
-           {% for posts in category %}
-             {% for post in posts %}
-                {% if post.url %}
-                    <section>
-                        <h1><a class="title-link" href="{{ post.url }}">{{ post.title }}</a></h1>
-                        <p>{{ post.date | date: '%d %B %Y' }}</p>
-                    </section>
-                {% endif %}
-             {% endfor %}
-           {% endfor %}
-    </div>
+        {% for posts in category %}
+            {% for post in posts %}{% if post.url %}
+                <section>
+                    <h1><a class="title-link" href="{{ post.url }}">{{ post.title }}</a></h1>
+                    <p>{{ post.date | date: '%d %B %Y' }}</p>
+                </section>
+            {% endif %}{% endfor %}
+        {% endfor %}
+    </section>
 {% endfor %}
