@@ -15,18 +15,18 @@
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    background-color: $light;
+    background-color: $dark;
     border-radius: 15px;
 }
 
 .tech p {
     font-size: 15px;
     line-height: 18px;
-    color: $dark;
+    color: $light;
 }
 
 .tech h3 {
-    color: $dark;
+    color: $light;
 }
 
 @media screen and (max-width: 800px) {
