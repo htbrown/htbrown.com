@@ -1,0 +1,35 @@
+---
+title: Projects
+description: Various projects I've worked on that I'm happy to show off.
+layout: page
+permalink: /projects/
+---
+
+<section>
+    <ul class="projects">
+        {% for p in site.projects %}
+            {% if p.link %}<a href="{{ p.link }}" class="project-container">{% endif %}
+                <li>
+                    <div class="content">
+                        <h1>{{ p.name }}</h3>
+                        <p class="attr">
+                            {% for lang in p.languages %}
+                                {% if forloop.index0 != 0 %}&bull;{% endif %}
+                                {{ lang }}
+                            {% endfor %}
+                            {% if p.tag %}<span class="tag">{{ p.tag }}</span>{% endif %}
+                        </p>
+                        <p>
+                            {{ p.content }}
+                        </p>
+                    </div>
+                    {% if p.img %}
+                        <div class="img">
+                            <img src="{{ p.img }}" alt="{{ p.name }}">
+                        </div>
+                    {% endif %}
+                </li>
+            {% if p.link %}</a>{% endif %}
+        {% endfor %}
+    </ul>
+</section>

@@ -37,6 +37,7 @@ sass:
 
 collections:
   - devices
+  - projects
 
 permalink: /:year/:month/:day/:title
 # Exclude from processing.
