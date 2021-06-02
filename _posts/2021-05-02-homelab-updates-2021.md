@@ -3,6 +3,7 @@ title: Homelab Updates 2021
 description: Still putting up with annoying Samba configs.
 category:
     - homelab
+    - tech
 layout: post
 ---
 
