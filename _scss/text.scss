@@ -1,77 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    color: $primary;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
-    color: $light;
-
+    color: $dark;
+    font-weight: 100;
 }
 
 strong {
     color: $primary;
 }
 
-h1 {
-    line-height: 35px;
-}
-
-h2 {
-    line-height: 25px;
-}
+h1 { line-height: 64px; font-size: 72px; }
+h2 { line-height: 52px; font-size: 64px; }
+h3 { line-height: 48px; font-size: 52px; }
+h4 { line-height: 18px; font-size: 48px; }
+h5 { line-height: 18px; font-size: 36px; }
+h6 { line-height: 8px; font-size: 24px; }
 
 p, span {
     font-size: 18px;
     line-height: 25px;
 }
 
-a {
+a:not(.button) {
     text-decoration: none;
     color: $primary;
     position: relative;
+    display: inline-block;
+    z-index: 0;
 }
 
-a:after {
+a:before:not(.button) {
     content: '';
-    height: 2px;
+    height: 3px;
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -8%;
     background: $primary;
-    transition: transform .2s ease;
-    transform: scaleX(0);
+    transition: all .1s ease;
     transform-origin: bottom left;
+    border-radius: 4px;
+    z-index: -1;
 }
 
-a:hover:after {
-    transform: scaleX(1);
-}
-
-.social-icon {
-    margin-right: 10px;
-}
-
-.social-icon i {
-    transition: color .2s ease;
-    font-size: 18px;
-}
-
-.social-icon:hover i {
-    color: $primary;
-}
-
-.inline-heading {
-    margin-top: 2em;
-}
-
-.title-link {
-    font-family: 'Merriweather', serif;
-}
-
-.post-footer {
-    font-size: 14px;
+a:hover:before:not(.button) {
+    height: 120%;
+    background-color: darken($light, 10%);
 }

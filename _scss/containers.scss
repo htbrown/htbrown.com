@@ -1,5 +1,5 @@
 .container {
-    margin: 10vh 10vw;
+    margin: 5vh 5vw;
     width: 50%;
 }
 
@@ -10,6 +10,6 @@ section {
 
 @media screen and (max-width: 800px) {
     .container {
-        width: 100%;
+        width: auto;
     }
 }
