@@ -5,9 +5,15 @@ layout: blank
 permalink: /
 ---
 
-<div class="container">
-    <h1>Hayden Brown</h1>
-    <h3>{{ site.description }}</h3>
-    {% include socials.html %}
-    {% include nav.html page="Home" %}
-</div>
+{% include nav.html page=page.title %}
+<main class="centred">
+  <div class="container">
+    <section>
+      <h1>Hi, I'm Hayden 👋</h1>
+      <h2>I'm a full-stack developer, amateur graphics designer and a music & tech enthusiast.</h2>
+    </section>
+    <section>
+      <a href="/work" class="btn"><span>See my work</span></a>
+    </section>
+  </div>
+</main>
