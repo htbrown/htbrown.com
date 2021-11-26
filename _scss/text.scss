@@ -23,6 +23,15 @@ h4 { font-size: 18px; }
 h5 { font-size: 16px; }
 h6 { font-size: 14px; }
 
+@media screen and (max-width: 1000px) {
+    h1 { font-size: 46px; color: $primary; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 24px; }
+    h4 { font-size: 18px; }
+    h5 { font-size: 16px; }
+    h6 { font-size: 14px; }
+}
+
 p, span {
     font-size: 18px;
     line-height: 25px;
@@ -42,7 +51,7 @@ a:not(.btn):not(.nav-item):not(.nav-brand):before {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -8%;
+    bottom: -20%;
     background: $primary;
     transition: all .1s ease;
     transform-origin: bottom left;
@@ -51,6 +60,6 @@ a:not(.btn):not(.nav-item):not(.nav-brand):before {
 }
 
 a:hover:not(.btn):not(.nav-item):not(.nav-brand):before {
-    height: 120%;
+    height: 130%;
     background-color: darken($light, 10%);
 }
