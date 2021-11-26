@@ -80,7 +80,8 @@ nav img {
         background-color: $light;
         margin: 0;
         display: block !important;
-        padding-top: 10px;
+        padding-top: 40px;
+        border-top: 1vh solid $primary;
     }
 
     .nav-menu .nav-item {
@@ -92,6 +93,10 @@ nav img {
         transition: all .1s;
         height: auto;
         text-align: left;
+    }
+
+    .nav-menu .nav-item:before {
+        transition: none !important;
     }
 
     .nav-menu .btn {
