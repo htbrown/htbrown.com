@@ -4,9 +4,9 @@
     </div>
     <div class="nav-right">
         <div class="nav-menu">
-            <a href="/" class="nav-item active">Home</a>
-            <a href="/about" class="nav-item">About</a>
-            <a href="/work" class="nav-item">Work</a>
+            <a href="/" class="nav-item {% if include.page == 'Home' %}active{% endif %}">Home</a>
+            <a href="/about" class="nav-item {% if include.page == 'About' %}active{% endif %}">About</a>
+            <a href="/work" class="nav-item" {% if include.page == 'Work' %}active{% endif %}>Work</a>
             <a href="https://github.com/htbrown" class="nav-item nav-social"><i class="ai-github-fill"></i></a>
             <a href="mailto:hayden@htbrown.com" class="nav-item nav-social"><i class="ai-open-envelope"></i></a>
         </div>
