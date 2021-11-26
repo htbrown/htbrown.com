@@ -27,6 +27,7 @@ button, a.btn {
 .btn span:after {
     content: url(/assets/svg/arrow-right.svg);
     position: absolute;
+    top: 2px;
     left: calc(100% + 10px);
     transition: all .1s ease;
 }
