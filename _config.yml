@@ -27,6 +27,7 @@ url: "https://htbrown.com" # the base hostname & protocol for your site, e.g. ht
 github_username:  htbrown
 twitch_username: itshadren
 
+
 # Build settings
 #theme: minima
 
@@ -34,11 +35,17 @@ sass:
   sass_dir: _scss
   style: compressed
 
-collections:
-  - devices
-  - projects
+permalink: /work/:title
 
-permalink: /:year/:month/:day/:title
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - categories
+  layout: work
+  permalinks:
+    category: "/work/categories/:name"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
