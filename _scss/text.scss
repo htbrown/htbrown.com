@@ -41,7 +41,7 @@ p, span {
     font-size: 14px;
 }
 
-a:not(.btn):not(.nav-item):not(.nav-brand) {
+a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill) {
     text-decoration: none;
     color: $primary;
     position: relative;
@@ -49,7 +49,7 @@ a:not(.btn):not(.nav-item):not(.nav-brand) {
     height: 100%;
 }
 
-a:not(.btn):not(.nav-item):not(.nav-brand):before {
+a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
     content: '';
     height: 15%;
     width: 100%;
@@ -63,7 +63,7 @@ a:not(.btn):not(.nav-item):not(.nav-brand):before {
     z-index: -1;
 }
 
-a:hover:not(.btn):not(.nav-item):not(.nav-brand):before {
+a:hover:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
     height: 130%;
     background-color: darken($light, 10%);
 }
