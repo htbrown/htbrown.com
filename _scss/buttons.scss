@@ -31,6 +31,7 @@ button, a.btn {
 
 .btn:hover {
     background-color: darken(white, 10%);
+    cursor: pointer;
 }
 
 .btn:hover span:after {
