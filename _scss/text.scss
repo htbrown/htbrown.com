@@ -28,15 +28,15 @@ p, span {
     line-height: 25px;
 }
 
-a:not(.button) {
+a:not(.btn):not(.nav-item):not(.nav-brand) {
     text-decoration: none;
     color: $primary;
     position: relative;
-    display: inline-block;
     z-index: 0;
+    height: 100%;
 }
 
-a:before:not(.button) {
+a:not(.btn):not(.nav-item):not(.nav-brand):before {
     content: '';
     height: 3px;
     width: 100%;
@@ -50,7 +50,7 @@ a:before:not(.button) {
     z-index: -1;
 }
 
-a:hover:before:not(.button) {
+a:hover:not(.btn):not(.nav-item):not(.nav-brand):before {
     height: 120%;
     background-color: darken($light, 10%);
 }

@@ -1,8 +1,17 @@
 <nav>
-    <div class="nav-items">
-        <a href="/" class="nav-item {% if include.page == 'Home' %}active{% endif %}">Home</a>
-        <a href="/about" class="nav-item {% if include.page == 'About' %}active{% endif %}">About</a>
-        <a href="/blog" class="nav-item {% if include.page == 'Blog' %}active{% endif %}">Blog</a>
-        <a href="/projects" class="nav-item {% if include.page == 'Projects' %}active{% endif %}">Projects</a>
+    <div class="nav-left">
+        <a href="/" class="nav-brand"><img src="/assets/img/branding/icon-primary.png" alt="HTBrown"></a>
+    </div>
+    <div class="nav-right">
+        <div class="nav-menu">
+            <a href="/" class="nav-item active">Home</a>
+            <a href="/about" class="nav-item">About</a>
+            <a href="/work" class="nav-item">Work</a>
+            <a href="https://github.com/htbrown" class="nav-item nav-social"><i class="ai-github-fill"></i></a>
+            <a href="mailto:hayden@htbrown.com" class="nav-item nav-social"><i class="ai-open-envelope"></i></a>
+        </div>
+        <a class="nav-burger nav-item" onclick="toggleNav()">
+            <i class="ai-three-line-horizontal"></i>
+        </a>
     </div>
 </nav>
