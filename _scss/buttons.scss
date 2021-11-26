@@ -19,14 +19,14 @@ button, a.btn {
     color: $primary !important;
     transition: all .1s;
     display: inline-block;
-    transform: translateX(-25px);
+    transform: translateX(-20px);
 }
 
 .btn span:after {
     content: url(/assets/svg/arrow-right.svg);
     position: absolute;
     left: calc(100% + 10px);
-    transition: all .1s;
+    transition: all .1s ease;
 }
 
 .btn:hover {
