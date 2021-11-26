@@ -37,6 +37,10 @@ p, span {
     line-height: 30px;
 }
 
+.small {
+    font-size: 14px;
+}
+
 a:not(.btn):not(.nav-item):not(.nav-brand) {
     text-decoration: none;
     color: $primary;
