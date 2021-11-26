@@ -34,7 +34,7 @@ h6 { font-size: 14px; }
 
 p, span {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 a:not(.btn):not(.nav-item):not(.nav-brand) {
@@ -47,7 +47,7 @@ a:not(.btn):not(.nav-item):not(.nav-brand) {
 
 a:not(.btn):not(.nav-item):not(.nav-brand):before {
     content: '';
-    height: 3px;
+    height: 15%;
     width: 100%;
     position: absolute;
     left: 0;
