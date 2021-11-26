@@ -37,6 +37,14 @@ main {
     overflow-x: hidden;
 }
 
+main.with-nav {
+    height: calc(100% - 100px - 1vh);
+    width: calc(100% - 2vh);
+    position: absolute;
+    top: 100px;
+    left: 1vh;
+}
+
 main.centred {
     align-items: center;
     height: 100%;
@@ -44,7 +52,7 @@ main.centred {
     overflow: hidden;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1vh;
 }
 
 ::-webkit-scrollbar {
