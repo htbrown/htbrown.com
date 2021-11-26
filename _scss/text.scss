@@ -3,7 +3,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', sans-serif;
     font-weight: 500;
-    color: $primary;
+    margin: 10px 0;
 }
 
 * {
@@ -16,12 +16,12 @@ strong {
     color: $primary;
 }
 
-h1 { line-height: 64px; font-size: 72px; }
-h2 { line-height: 52px; font-size: 64px; }
-h3 { line-height: 48px; font-size: 52px; }
-h4 { line-height: 18px; font-size: 48px; }
-h5 { line-height: 18px; font-size: 36px; }
-h6 { line-height: 8px; font-size: 24px; }
+h1 { font-size: 72px; color: $primary; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
 
 p, span {
     font-size: 18px;
