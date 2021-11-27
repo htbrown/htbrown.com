@@ -34,18 +34,6 @@ twitch_username: itshadren
 sass:
   sass_dir: _scss
   style: compressed
-
-permalink: /work/:title
-
-plugins:
-  - jekyll-archives
-
-jekyll-archives:
-  enabled:
-    - categories
-  layout: work
-  permalinks:
-    category: "/work/categories/:name"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
