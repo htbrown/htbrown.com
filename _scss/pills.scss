@@ -26,6 +26,19 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .pills {
+        display: flex;
+        height: 60px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 90%;
+        * {
+            height: 22px !important;
+        }
+    }
+}
+
 @keyframes pulse {
     0% { background-color: darken($light, 10%); }
     50% { background-color: darken($light, 5%); }

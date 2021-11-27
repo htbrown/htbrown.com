@@ -14,7 +14,7 @@
 
     &.fixed {
         width: 30vw !important;
-        height: 30vh !important;
+        min-height: 30vh !important;
     }
 
     &.dark {
@@ -47,4 +47,5 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 95%;
 }

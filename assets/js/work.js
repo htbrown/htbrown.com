@@ -8,13 +8,13 @@ function handleCard(data) {
     taglist = "",
     buttons = "",
     stylelist = "";
-    
+
   if (data.image != null) {
     classname = classname + " dark";
     stylelist =
       stylelist +
       "background: linear-gradient( rgba(69, 28, 49, 0.8), rgba(69, 28, 49, 0.8) ), url(https://cms.c.htbrown.net" +
-      data.image.formats.large.url +
+      data.image.formats.medium.url +
       ");";
   }
   if (data.code != null) {
@@ -49,13 +49,12 @@ function handleData(data) {
   for (i in data) {
       fetch("https://cms.c.htbrown.net/works/" + data[i].id)
         .then(r => r.json())
-        .then(d => {
-            console.log(d);
-            let settings = handleCard(d);
+        .then(async d => {
+            let settings = await handleCard(d);
                 work =
                   work +
                   `
-            <div class="${settings.classname}" style="${settings.stylelist}" data-aos="zoom-in">
+            <div class="${settings.classname}" style="${settings.stylelist}">
                 <h2>${d.name}</h2>
                 <p>${settings.taglist}</p>
                 <p>${d.description}</p>
@@ -72,8 +71,8 @@ function handleData(data) {
 if (params.get("tag")) {
   fetch("https://cms.c.htbrown.net/tags/" + params.get("tag"))
     .then((r) => r.json())
-    .then((data) => {
-      handleData(data.works);
+    .then(async (data) => {
+      await handleData(data.works);
     })
     .catch((error) => {
         console.log(error);
@@ -83,8 +82,8 @@ if (params.get("tag")) {
 } else {
   fetch("https://cms.c.htbrown.net/works")
     .then((r) => r.json())
-    .then((data) => {
-      handleData(data);
+    .then(async (data) => {
+      await handleData(data);
       workArea.innerHTML = work;
     })
     .catch((error) => {

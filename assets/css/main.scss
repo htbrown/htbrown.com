@@ -40,6 +40,10 @@ main {
     overflow-x: hidden;
 }
 
+main * {
+  margin-right: 10px;
+}
+
 main.with-nav {
     height: calc(100% - 100px - 1vh);
     width: calc(100% - 2vh);
@@ -64,7 +68,7 @@ main.centred {
 }
 
 ::-webkit-scrollbar-track {
-  background: $light; 
+  background: darken($light, 5%); 
 }
  
 ::-webkit-scrollbar-thumb {
