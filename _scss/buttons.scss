@@ -15,6 +15,14 @@ button, a.btn {
     color: $primary;
     margin-top: 10px;
     margin-right: 10px;
+
+    * {
+        color: $primary;
+    }
+}
+
+.btn.small {
+    padding: 5px 30px;
 }
 
 .btn span {
