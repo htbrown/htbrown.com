@@ -47,6 +47,9 @@ a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill) {
     position: relative;
     z-index: 0;
     height: 100%;
+    &.with-icon i {
+        color: $primary;
+    }
 }
 
 a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
@@ -64,6 +67,6 @@ a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
 }
 
 a:hover:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
-    height: 130%;
+    height: 140%;
     background-color: darken($light, 10%);
 }
