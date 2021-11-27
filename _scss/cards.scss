@@ -1,0 +1,50 @@
+.card {
+    padding: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: darken($light, 5%);
+    display: block;
+
+    &.placeholder {
+        animation: pulse 1s infinite ease;
+        width: 30vw;
+        height: 30vh;
+    }
+
+    &.fixed {
+        width: 30vw !important;
+        height: 30vh !important;
+    }
+
+    &.dark {
+        background-color: $dark;
+        *:not(i) {
+            color: $light;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        &.placeholder {
+            width: 100%;
+        }
+        &.fixed {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% { background-color: darken($light, 10%); }
+    50% { background-color: darken($light, 5%); }
+    100% { background-color: darken($light, 10%); }
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
