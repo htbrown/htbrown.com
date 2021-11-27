@@ -23,12 +23,12 @@ body, html {
 html {
     margin: 0;
     background-color: $light;
+    border: 1vh solid $primary;
 }
 
 body {
     background-color: $light;
     overflow-x: hidden;
-    border: 1vh solid $primary;
     display: flex;
     flex-direction: column;
 }
