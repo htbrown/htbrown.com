@@ -23,7 +23,6 @@ body, html {
 html {
     margin: 0;
     background-color: $light;
-    border: 1vh solid $primary;
 }
 
 body {
@@ -31,6 +30,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    border: 1vh solid $primary;
 }
 
 main {
