@@ -30,3 +30,7 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 
 gem "webrick", "~> 1.7"
+
+group :jekyll_plugins do
+  gem "jekyll-archives", "~> 2.1"
+end
