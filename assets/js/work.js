@@ -1,18 +1,19 @@
 let params = new URLSearchParams(window.location.search);
 
 let workArea = document.getElementById("workContent");
-let classname = "card fixed",
-  taglist = "",
-  buttons = "",
-  stylelist = "";
 let work = "";
 
 function handleCard(data) {
+  let classname = "card fixed",
+    taglist = "",
+    buttons = "",
+    stylelist = "";
+    
   if (data.image != null) {
     classname = classname + " dark";
     stylelist =
       stylelist +
-      "background: linear-gradient( rgba(69, 28, 49, 0.5), rgba(69, 28, 49, 0.5) ), url(https://cms.c.htbrown.net" +
+      "background: linear-gradient( rgba(69, 28, 49, 0.8), rgba(69, 28, 49, 0.8) ), url(https://cms.c.htbrown.net" +
       data.image.formats.large.url +
       ");";
   }
@@ -65,6 +66,7 @@ function handleData(data) {
 
         })
   }
+  work = "", classname = "card fixed", taglist = "", buttons = "", stylelist = "";
 }
 
 if (params.get("tag")) {
