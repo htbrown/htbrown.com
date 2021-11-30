@@ -1,77 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
-    color: $light;
-
+    color: $dark;
+    font-weight: 100;
 }
 
 strong {
     color: $primary;
 }
 
-h1 {
-    line-height: 35px;
-}
+h1 { font-size: 72px; color: $primary; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
 
-h2 {
-    line-height: 25px;
+@media screen and (max-width: 1000px) {
+    h1 { font-size: 46px; color: $primary; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 24px; }
+    h4 { font-size: 18px; }
+    h5 { font-size: 16px; }
+    h6 { font-size: 14px; }
 }
 
 p, span {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 30px;
 }
 
-a {
+.small {
+    font-size: 14px;
+}
+
+a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill) {
     text-decoration: none;
     color: $primary;
     position: relative;
+    z-index: 0;
+    height: 100%;
+    &.with-icon i {
+        color: $primary;
+    }
 }
 
-a:after {
+a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
     content: '';
-    height: 2px;
+    height: 15%;
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -20%;
     background: $primary;
-    transition: transform .2s ease;
-    transform: scaleX(0);
+    transition: all .1s ease;
     transform-origin: bottom left;
+    border-radius: 4px;
+    z-index: -1;
 }
 
-a:hover:after {
-    transform: scaleX(1);
-}
-
-.social-icon {
-    margin-right: 10px;
-}
-
-.social-icon i {
-    transition: color .2s ease;
-    font-size: 18px;
-}
-
-.social-icon:hover i {
-    color: $primary;
-}
-
-.inline-heading {
-    margin-top: 2em;
-}
-
-.title-link {
-    font-family: 'Merriweather', serif;
-}
-
-.post-footer {
-    font-size: 14px;
+a:hover:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
+    height: 140%;
+    background-color: darken($light, 10%);
 }

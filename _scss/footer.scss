@@ -1,9 +1,21 @@
 footer {
     margin-top: 6em;
+    padding-bottom: 20px;
 
     p {
-        font-size: 11px;
-        line-height: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .small {
+        font-size: 14px;
+    }
+
+    .large {
+        font-size: 18px;
+        color: $primary;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
     }
 
     .version {

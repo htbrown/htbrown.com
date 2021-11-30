@@ -2,34 +2,81 @@
 ---
 
 @import 'colours';
-@import 'backgroundFade';
-@import 'containers';
 @import 'text';
-@import 'nav';
+@import 'containers';
 @import 'footer';
-@import 'tech';
-@import 'markdown';
-@import 'projects';
+@import 'buttons';
+@import 'navigation';
+@import 'tables';
+@import 'pills';
+@import 'cards';
 
 body, html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    min-height: 100vh;
-    scroll-behavior: smooth;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html {
+    margin: 0;
+    background-color: $light;
 }
 
 body {
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), linear-gradient(to bottom right, #D0026C, #943194, #003294);
-    background-size: 400% 400%;
-    background-attachment: fixed;
-
-    -webkit-animation: backgroundFade 20s ease infinite;
-    -moz-animation: backgroundFade 20s ease infinite;
-    animation: backgroundFade 20s ease infinite;
-
+    background-color: $light;
+    overflow-x: hidden;
     display: flex;
+    flex-direction: column;
+    border: 1vh solid $primary;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+section {
+  margin-right: 10px;
+}
+
+main.with-nav {
+    height: calc(100% - 100px - 1vh);
+    width: calc(100% - 2vh);
+    position: absolute;
+    top: 100px;
+    left: 1vh;
+}
+
+main.centred {
     align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 1vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: darken($light, 5%); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: darken($primary, 10%); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $dark; 
 }
 
 #easterEgg {

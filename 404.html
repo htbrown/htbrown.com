@@ -1,5 +1,18 @@
 ---
 title: 404
 description: The page you were looking for couldn't be found.
-layout: page
+layout: blank
 ---
+
+{% include nav.html page=page.title %}
+<main class="centred">
+  <div class="container">
+    <section>
+      <h1>Error 404 🔍</h1>
+      <h2>The page you were looking for couldn't be found.</h2>
+    </section>
+    <section>
+      <a href="/" class="btn"><span>Go home</span></a>
+    </section>
+  </div>
+</main>

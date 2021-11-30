@@ -5,14 +5,15 @@
 </head>
 <body>
     <button id="easterEgg" onclick="easterEgg()">egg</button>
-    <div class="container">
-        <h1>{{ page.title }} / Hayden Brown</h1>
-        <h3>{{ page.description }}</h3>
-        {% include socials.html %}
-        {% include nav.html page=page.title %}
-        {{ content }}
-        {% include footer.html %}
-        {% include foot.html %}
-    </div>
+    {% include nav.html page=page.title %}
+    <main class="with-nav">
+        <div class="container">
+            <h1>{{ page.title }} {% if page.emoji %}{{ page.emoji }}{% endif %}</h1>
+            <h2>{{ page.description }}</h2>
+            {{ content }}
+            {% include footer.html %}
+            {% include foot.html %}
+        </div>
+    </main>
 </body>
 </html>
