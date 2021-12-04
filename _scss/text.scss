@@ -41,6 +41,10 @@ p, span {
     font-size: 14px;
 }
 
+sup {
+    font-size: 11px;
+}
+
 a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill) {
     text-decoration: none;
     color: $primary;
