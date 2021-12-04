@@ -47,16 +47,16 @@ sup {
 
 a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill) {
     text-decoration: none;
+    white-space: nowrap;
     color: $primary;
     position: relative;
     z-index: 0;
-    height: 100%;
     &.with-icon i {
         color: $primary;
     }
 }
 
-a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
+a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
     content: '';
     height: 15%;
     width: 100%;
@@ -70,7 +70,7 @@ a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
     z-index: -1;
 }
 
-a:hover:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):before {
+a:hover:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
     height: 140%;
     background-color: darken($light, 10%);
 }
