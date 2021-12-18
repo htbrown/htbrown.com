@@ -13,7 +13,7 @@ function handleCard(data) {
     classname = classname + " dark";
     stylelist =
       stylelist +
-      "background: linear-gradient( rgba(69, 28, 49, 0.8), rgba(69, 28, 49, 0.8) ), url(https://cms.c.htbrown.net" +
+      "background: linear-gradient( rgba(69, 28, 49, 0.9), rgba(69, 28, 49, 0.9) ), url(https://cms.c.htbrown.net" +
       data.image.formats.medium.url +
       ");";
   }
