@@ -23,6 +23,16 @@
             color: $light;
         }
     }
+
+    a {
+        color: $light !important;
+        &:after {
+            background-color: $light !important;
+        }
+        &:hover:after {
+            background-color: $primary !important;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
