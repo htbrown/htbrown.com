@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 
 strong {
     color: $primary;
+    font-weight: 700;
 }
 
 h1 { font-size: 72px; color: $primary; }
@@ -58,11 +59,11 @@ a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill) {
 
 a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
     content: '';
-    height: 15%;
+    height: 2px;
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -20%;
+    bottom: -15%;
     background: $primary;
     transition: all .1s ease;
     transform-origin: bottom left;
@@ -71,6 +72,15 @@ a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
 }
 
 a:hover:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
-    height: 140%;
+    height: 130%;
     background-color: darken($light, 10%);
+}
+
+li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+i.pink {
+    color: $primary !important;
 }
