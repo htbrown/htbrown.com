@@ -20,7 +20,7 @@
     &.placeholder {
         display: inline-block;
         background-color: darken($light, 10%);
-        animation: pulse 1s infinite ease;
+        animation: pillPulse 1s infinite ease;
         width: 60px;
         height: 18px;
     }
@@ -38,7 +38,7 @@
     }
 }
 
-@keyframes pulse {
+@keyframes pillPulse {
     0% { background-color: darken($light, 10%); }
     50% { background-color: darken($light, 5%); }
     100% { background-color: darken($light, 10%); }

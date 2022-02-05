@@ -7,7 +7,7 @@
     display: block;
 
     &.placeholder {
-        animation: pulse 1s infinite ease;
+        animation: cardPulse 1s infinite ease;
         width: 30vw;
         height: 30vh;
     }
@@ -47,7 +47,7 @@
     }
 }
 
-@keyframes pulse {
+@keyframes cardPulse {
     0% { background-color: darken($light, 10%); }
     50% { background-color: darken($light, 5%); }
     100% { background-color: darken($light, 10%); }
