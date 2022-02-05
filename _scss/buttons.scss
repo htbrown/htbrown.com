@@ -15,9 +15,14 @@ button, a.btn {
     color: $primary;
     margin-top: 10px;
     margin-right: 10px;
+    white-space: nowrap;
 
     * {
         color: $primary;
+    }
+
+    &.no-margin {
+        margin: 0 !important;
     }
 }
 

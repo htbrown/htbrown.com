@@ -1,0 +1,43 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: $dark;
+
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.banner-left {
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 20px;
+}
+.banner-right {
+    display: flex;
+    margin-right: 5vw;
+    margin-left: 20px;
+}
+
+.banner-spacer {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.banner-close {
+    background: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    i {
+        color: $light;
+    }
+}

@@ -42,6 +42,10 @@ p, span {
     font-size: 14px;
 }
 
+.light, .light * {
+    color: $light !important;
+}
+
 sup {
     font-size: 11px;
 }
