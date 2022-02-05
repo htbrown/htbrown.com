@@ -7,19 +7,30 @@ footer {
         padding: 0;
     }
 
-    .small {
-        font-size: 14px;
-    }
-
     .large {
         font-size: 18px;
-        color: $primary;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
+
+        .pink {
+            color: $primary;
+        }
     }
 
-    .version {
-        font-size: 9px;
+    .small {
+        font-size: 11px;
+    }
+
+    .github {
+        padding-left: 5px;
+        padding-right: 5px;
+
+        &:after {
+            background-color: transparent !important;
+        }
+        &:hover:after {
+            background-color: darken($light, 10%) !important;
+        }
     }
     
     .bullet {

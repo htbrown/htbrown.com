@@ -1,9 +1,6 @@
 <footer>
         <p class="large">
-            &copy; HTBrown 2022
+            &copy; HTBrown 2022{% if page.github %}<span class="bullet">—</span> <a class="github" href="{{ page.github }}"><i class="ai-github-fill pink"></i></a>{% endif %}
         </p>
-        <p class="small">
-            {% if page.github %} <a href="{{ page.github }}"><i class="ai-github-fill pink"></i></a></span> <span class="bullet">&bull;</span> {% endif %} See the <a href="/privacy">Privacy Statement</a>.
-        </p>
-        <p class="version">v6.2</p>
+        <p class="small">v6.2 <span class="bullet"></span> <a href="/privacy">Privacy Statement</a></p>
 </footer>

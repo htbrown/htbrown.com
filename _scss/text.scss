@@ -63,7 +63,7 @@ a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -15%;
+    bottom: -10%;
     background: $primary;
     transition: all .1s ease;
     transform-origin: bottom left;
@@ -72,7 +72,7 @@ a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
 }
 
 a:hover:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
-    height: 130%;
+    height: 120%;
     background-color: darken($light, 10%);
 }
 
