@@ -4,7 +4,7 @@ let workArea = document.getElementById("workContent");
 let work = "";
 
 function handleCard(data) {
-  let classname = "card fixed",
+  let classname = "card fixed animate__animated animate__zoomIn animate__faster",
     taglist = "",
     buttons = "",
     stylelist = "";
