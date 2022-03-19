@@ -26,6 +26,12 @@
     }
 }
 
+.pill-close {
+    margin-left: 12px;
+    color: $light;
+    font-size: 14px;
+}
+
 @media screen and (max-width: 800px) {
     .pills {
         display: flex;
