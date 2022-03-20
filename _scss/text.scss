@@ -24,10 +24,14 @@ h4 { font-size: 18px; }
 h5 { font-size: 16px; }
 h6 { font-size: 14px; }
 
+.heading-padded {
+    margin-top: 30px;
+}
+
 @media screen and (max-width: 1000px) {
-    h1 { font-size: 46px; color: $primary; }
-    h2 { font-size: 28px; }
-    h3 { font-size: 24px; }
+    h1 { font-size: 42px; color: $primary; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 20px; }
     h4 { font-size: 18px; }
     h5 { font-size: 16px; }
     h6 { font-size: 14px; }
@@ -76,7 +80,7 @@ a:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
 }
 
 a:hover:not(.btn):not(.nav-item):not(.nav-brand):not(.pill):after {
-    height: 125%;
+    height: 132%;
     background-color: darken($light, 10%);
 }
 
@@ -87,4 +91,25 @@ li {
 
 i.pink {
     color: $primary !important;
+}
+
+blockquote {
+    border-left: 5px solid $primary;
+    margin: 0;
+    padding: 10px 60px 10px 30px;
+    background-color: darken($light, 5%);
+    display: inline-block;
+}
+
+.contacts {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    i {
+        font-size: 20px;
+        color: $primary;
+        padding-right: 15px;
+    }
 }
