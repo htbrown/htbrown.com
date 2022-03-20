@@ -81,6 +81,21 @@ main.centred {
   background: $dark; 
 }
 
+*:target {
+  animation: targetFlash 2s;
+  animation-delay: .5s;
+}
+
+@keyframes targetFlash {
+  0% { background-color: transparent; }
+  20% { background-color: darken($light, 10%); padding: 20px; }
+  30% { background-color: transparent; }
+  40% { background-color: darken($light, 10%); padding: 20px; }
+  50% { background-color: transparent; }
+  60% { background-color: darken($light, 10%); padding: 20px; }
+  70% { background-color: transparent; }
+}
+
 #easterEgg {
     background: transparent;
     border: none !important;
