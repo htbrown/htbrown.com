@@ -6,11 +6,17 @@
 section {
     margin-top: 5vh;
     margin-bottom: 5vh;
-    width: 75%;
+    width: 50%;
 }
 
 .fullwidth {
     width: 100% !important;
+}
+
+@media screen and (max-width: 1600px) {
+    section {
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
