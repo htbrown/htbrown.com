@@ -93,14 +93,6 @@ i.pink {
     color: $primary !important;
 }
 
-blockquote {
-    border-left: 5px solid $primary;
-    margin: 0;
-    padding: 10px 60px 10px 30px;
-    background-color: darken($light, 5%);
-    display: inline-block;
-}
-
 .contacts {
     list-style-type: none;
     margin: 0;

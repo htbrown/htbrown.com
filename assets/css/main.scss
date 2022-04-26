@@ -11,6 +11,7 @@
 @import 'pills';
 @import 'cards';
 @import 'banners';
+@import 'markdown';
 
 body, html {
     box-sizing: border-box;
@@ -84,6 +85,7 @@ main.centred {
 *:target {
   animation: targetFlash 2s;
   animation-delay: .5s;
+  border-radius: 4px;
 }
 
 @keyframes targetFlash {
