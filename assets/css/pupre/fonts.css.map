@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../src/fonts.scss"],"names":[],"mappings":"AAAA,WACI,6BACA","file":"fonts.css","sourcesContent":["@font-face {\n    font-family: \"akar-icons-btn\";\n    src: url(https://cdn.jsdelivr.net/gh/artcoholic/akar-icons-fonts@1.1.0/src/fonts/akar-icons.ttf);\n}"]}
