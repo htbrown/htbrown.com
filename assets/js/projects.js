@@ -2,7 +2,7 @@ let params = new URLSearchParams(window.location.search);
 
 // Bring tags in from CMS for pills
 $.ajax({
-    url: 'https://cms.c.htbrown.net/items/tags',
+    url: 'https://htbrown.cms.nbg1.htbrown.net/items/tags',
     success: (result) => {
         let tags = "";
         for (i in result.data) {
@@ -27,7 +27,7 @@ async function getCardProps(data) {
         stylelist = "",
         featured = "";
 
-    if (data.image !== null) stylelist = stylelist + `background: linear-gradient( rgba(69, 28, 49, 0.9), rgba(69, 28, 49, 0.9) ), url(https://cms.c.htbrown.net/assets/${data.image});background-size: cover;`;
+    if (data.image !== null) stylelist = stylelist + `background: linear-gradient( rgba(69, 28, 49, 0.9), rgba(69, 28, 49, 0.9) ), url(https://htbrown.cms.nbg1.htbrown.net/assets/${data.image});background-size: cover;`;
     if (data.code !== null) buttons = buttons + `<a href="${data.code}" class="btn small"><span><i class="ai-github-fill"></i></span></a>`;
     if (data.link !== null) buttons = buttons + `<a href="${data.link}" class="btn small"><span><i class="ai-link-chain"></i></span></a>`;
     if (data.featured === true) {
@@ -86,7 +86,7 @@ async function handleData(data) {
 
 // Get the data from the CMS
 $.ajax({
-    url: 'https://cms.c.htbrown.net/items/projects',
+    url: 'https://htbrown.cms.nbg1.htbrown.net/items/projects',
     success: async (result) => {
         await handleData(result.data);
     },
